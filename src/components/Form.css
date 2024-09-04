@@ -1,0 +1,84 @@
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes buttonHover {
+    0% {
+      background-color: #007bff;
+      transform: scale(1);
+    }
+    50% {
+      background-color: #0056b3;
+      transform: scale(1.05);
+    }
+    100% {
+      background-color: #007bff;
+      transform: scale(1);
+    }
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #f7f7f7;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #333;
+    animation: fadeInUp 0.6s ease-out;
+  }
+  
+  .form-label {
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .animated-input {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.8s ease-out;
+  }
+  
+  .animated-input:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.25);
+    transform: translateY(-2px);
+  }
+  
+  .submit-btn {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .animated-button:hover {
+    animation: buttonHover 0.4s ease-in-out;
+  }
+  
